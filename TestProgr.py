@@ -9,9 +9,6 @@ class CalcTest(ut.TestCase):
     def test_add1(self):
         self.assertEqual(self.mk.presenceElement
                          (2,self.mk.Progression(1,2,3)),True)
-    def test_add2(self):
-        self.assertRaises(self.mk.elemReturn
-                         (-1,self.mk.Progression(1,2,3)),)
     def test_add3(self):
         self.assertEqual(self.mk.elemReturn
                          (1,self.mk.Progression(1,2,3)),4)

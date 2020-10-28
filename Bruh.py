@@ -29,8 +29,5 @@ class MyClass():
 
         return (j in a)
     def elemReturn(self,c,a):
-        if(c<0):
-            return Exception
-        else:
-            print(a[c])
+        print(a[c])
         return a[c] 
