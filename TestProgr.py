@@ -14,7 +14,7 @@ class CalcTest(ut.TestCase):
                          (-1,self.mk.Progression(1,2,3)),)
     def test_add3(self):
         self.assertEqual(self.mk.elemReturn
-                         (-1,self.mk.Progression(1,2,3)),2)
+                         (1,self.mk.Progression(1,2,3)),4)
    
         
 if __name__ == '__main__':
