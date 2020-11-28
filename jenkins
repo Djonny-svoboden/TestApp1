@@ -40,7 +40,7 @@ pipeline
 			steps
 			{
 				sh 'pip install --no-cache-dir -r ./requirements.txt'
-				sh 'python3 TestProgr.py'
+				sh 'python3 TestProgr.py.'
 			}
 			post
 			{
@@ -70,7 +70,7 @@ pipeline
                 echo "Application Publishing"
                 checkout scm
                 script {
-                    def customImage = docker.build("Djonny-svoboden/docker-test:${env.BUILD_ID}")
+                    def customImage = docker.build("djonny-svoboden/docker-test:${env.BUILD_ID}")
                     docker.withRegistry('',registryCredential )
                     {
                         customImage.push()}
